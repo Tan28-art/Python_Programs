@@ -1,5 +1,5 @@
 # Program to calculate the area or vol of a shape chosen by user
-import Shapes.Area, Shapes.Vol
+import Area, Vol
 
 f = True
 
@@ -46,9 +46,9 @@ while f:
                 s = float(input("Enter side of cube: "))
 
                 if x == 1:
-                    print(Shapes.Area.tsa_cube(s))
+                    print(Area.tsa_cube(s))
                 else:
-                    print(Shapes.Vol.vol_cube(s))
+                    print(Vol.vol_cube(s))
 
             elif y == 2:
                 l = float(input("Enter length: "))
@@ -56,36 +56,36 @@ while f:
                 h = float(input("Enter height: "))
 
                 if x == 1:
-                    print(Shapes.Area.tsa_cuboid(l, b, h))
+                    print(Area.tsa_cuboid(l, b, h))
                 else:
-                    print(Shapes.Vol.vol_cuboid(l, b, h))
+                    print(Vol.vol_cuboid(l, b, h))
 
             elif y == 3:
                 r = float(input("Radius of cylinder: "))
                 h = float(input("Height of cylinder: "))
 
                 if x == 1:
-                    print(Shapes.Area.tsa_cylinder(r, h))
+                    print(Area.tsa_cylinder(r, h))
                 else:
-                    print(Shapes.Vol.vol_cylinder(r, h))
+                    print(Vol.vol_cylinder(r, h))
 
             elif y == 4:
                 r = float(input("Radius of sphere: "))
 
                 if x == 1:
-                    print(Shapes.Area.tsa_sphere(r))
+                    print(Area.tsa_sphere(r))
                 else:
-                    print(Shapes.Vol.vol_sphere(r))
+                    print(Vol.vol_sphere(r))
 
             elif y == 5:
                 r = float(input("Radius of cone: "))
 
                 if x == 1:
                     s = float(input("Slant height of cone: "))
-                    print(Shapes.Area.tsa_cone(r, s))
+                    print(Area.tsa_cone(r, s))
                 else:
                     h = float(input("Height of cone: "))
-                    print(Shapes.Vol.vol_cone(r, h))
+                    print(Vol.vol_cone(r, h))
                     
     except ValueError:
         print("Pls enter a number")
