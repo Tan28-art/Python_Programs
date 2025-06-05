@@ -1,6 +1,6 @@
 import mysql.connector
 
-con = mysql.connector.connect(host='localhost', user='root', password='Tan*357498',  database='tan_db')
+con = mysql.connector.connect(user='root', password='your_password', host='localhost', database='your_db')
 
 cur = con.cursor()
 cur.execute('select * from emp;')
