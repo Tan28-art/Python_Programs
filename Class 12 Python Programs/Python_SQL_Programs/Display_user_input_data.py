@@ -1,6 +1,6 @@
 import mysql.connector
 
-con = mysql.connector.connect(user='root', password='Tan*357498', host='localhost', database='tan_db')
+con = mysql.connector.connect(user='root', password='your_password', host='localhost', database='your_db')
 
 cur = con.cursor()
 e = int(input("Enter Emp no: "))
